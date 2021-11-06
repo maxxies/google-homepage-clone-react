@@ -1,14 +1,15 @@
 import React, { useRef, useState } from "react";
 import { HiSearch } from "react-icons/hi";
 import { MdKeyboardVoice } from "react-icons/md";
-import logo from "../Images/logo.jpg";
+import logo from "../Images/logo.png";
 
 function MidSection() {
     const userSearchInput = useRef();
     const [userInput, userInputHandler] = useState(false);
 
+    //Function changes state based on the staus of the user input
     function handleChange() {
-        let input = userSearchInput.current.value;
+        let input = userSearchInput.current.value; //Current user input
         if (input === "") {
             userInputHandler(false);
         } else {
@@ -21,6 +22,7 @@ function MidSection() {
                 <div className="mid-section">
                     <div className="search-region">
                         <div className="image-search">
+                            {/* {If userInput is false logo is rendered otherwise the user input} */}
                             {userInput === false ? (
                                 <img src={logo} alt="Side hustle logo" />
                             ) : (
@@ -39,13 +41,21 @@ function MidSection() {
                                 <input
                                     type="text"
                                     ref={userSearchInput}
-                                    onSubmit={() => handleChange()}
+                                    onKeyPress={(event) => {
+                                        if (event.key === "Enter") {
+                                            handleChange();
+                                        }
+                                    }}
                                 />
                             </form>
                             <span>
                                 <MdKeyboardVoice />
                             </span>
                         </div>
+                    </div>
+                    <div className="buttons">
+                        <button>Google Search</button>
+                        <button>I'm Feeling Lucky</button>
                     </div>
                     <div className="languages">
                         <p>Google offered in:</p>
