@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* background: whitesmoke; */
+}
+.container {
+    margin: 0 auto;
+    width: 97%;
+}
+
+/* Header */
+.header {
+    margin-top: 10px;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header ul {
+    list-style: none;
+    display: flex;
+}
+.header ul li {
+    padding: 8px;
+}
+.header ul li span {
+    font-size: 25px;
+}
+
+/* Midsection */
+.mid-section {
+    position: relative;
+    top: 15px;
+    width: 45%;
+    margin: 0 auto;
+}
+
+.search-region {
+    width: 100%;
+    display: block;
+}
+.search-region .image-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-region .search-input {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 24px;
+}
+.search-region .search-input form input {
+    width: 510px;
+    padding: 2px;
+    font-size: 15x;
+    outline: none;
+    border: white;
+}
+.search-region .search-input form input[type="text"] {
+    font-size: 16px;
+}
+.search-region .search-input:hover {
+    box-shadow: 0 0 6px #ccc;
+    border: 1px solid white;
+}
+.search-region .search-input span {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.3);
+}
+.languages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.languages h3 {
+    font-weight: 200;
+    font-size: 20px;
+}
+.languages ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.languages ul li {
+    padding: 10px;
+    color: blue;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background-color: rgba(0, 0, 0, 0.05);
+    height: 80px;
+    margin-top: 250px;
+    width: 100%;
+}
+.services {
+    border-top: 2px solid black;
+    display: flex;
+}
+.services-one {
+    display: inline-block;
+    width: 50%;
+}
+.services-one p {
+    float: left;
+    margin-left: 25px;
+    padding-bottom: 15px;
+}
+.services-two {
+    display: inline-block;
+    width: 50%;
+}
+.services-two p {
+    float: right;
+    margin-right: 25px;
+    margin-bottom: 15px;
+}
+/*
+.home-loading-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    z-index: 10;
+    visibility: visible;
+    opacity: 1;
+}
+.loading-spinner {
+    position: fixed;
+    width: 40%;
+    /*height: 50%; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    border-radius: 10px;
+    z-index: 11;
+}
+.form-modal-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    z-index: 10;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+.form-big-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.form-modal {
+    position: fixed;
+    background-color: whitesmoke;
+    width: 40%;
+    /*height: 50%; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    border-radius: 10px;
+    z-index: 11;
+}
+
+.form-modal-inner-confirm {
+    font-size: 15px;
+    padding: 10px 30px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    font: 200;
+    margin-bottom: 0.1rem;
+}
+
+.form-modal-box p {
+    width: 100%;
+    font: 100;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #092e46;
+    opacity: 0.7;
+    margin-bottom: 20px;
+}
+
+.form-modal-box {
+    display: block;
+    margin-top: -0.12rem;
+    padding: 0.5rem;
+    width: 100%;
+}
+.form-modal h1 {
+    color: #27606e;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+*/
