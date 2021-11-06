@@ -15,7 +15,11 @@ function Header() {
                                 <CgMenuGridO />
                             </span>
                         </li>
-                        <li>+</li>
+                        <li>
+                            <span>
+                                <button>Sign In</button>
+                            </span>
+                        </li>
                     </ul>
                 </div>
             </div>
