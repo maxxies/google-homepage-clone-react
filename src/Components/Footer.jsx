@@ -15,9 +15,9 @@ function Footer() {
                         <p>How Search works</p>
                     </div>
                     <div className="services-two">
-                        <p>Privacy</p>
-                        <p>Terms</p>
                         <p>Settings</p>
+                        <p>Terms</p>
+                        <p>Privacy</p>
                     </div>
                 </div>
             </div>
