@@ -6,6 +6,7 @@ import logo from "../Images/logo.png";
 function MidSection() {
     const userSearchInput = useRef();
     const [userInput, userInputHandler] = useState(false);
+    const [currentUserInput, currentUserInputHandler] = useState("");
 
     //Function changes state based on the staus of the user input
     function handleChange() {
@@ -13,7 +14,9 @@ function MidSection() {
         if (input === "") {
             userInputHandler(false);
         } else {
+            currentUserInputHandler(input);
             userInputHandler(true);
+            input = "";
         }
     }
     return (
@@ -26,7 +29,7 @@ function MidSection() {
                             {userInput === false ? (
                                 <img src={logo} alt="Side hustle logo" />
                             ) : (
-                                <p>{userSearchInput.current.value}</p>
+                                <p>{currentUserInput}</p>
                             )}
                         </div>
                         <div className="search-input">
@@ -41,11 +44,7 @@ function MidSection() {
                                 <input
                                     type="text"
                                     ref={userSearchInput}
-                                    onKeyPress={(event) => {
-                                        if (event.key === "Enter") {
-                                            handleChange();
-                                        }
-                                    }}
+                                    onChange={() => handleChange()}
                                 />
                             </form>
                             <span>
